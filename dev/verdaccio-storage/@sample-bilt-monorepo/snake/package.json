@@ -967,8 +967,8 @@
 			},
 			"homepage": "https://github.com/giltayar/sample-bilt-monorepo#readme",
 			"_id": "@sample-bilt-monorepo/snake@1.0.12",
-			"_nodeVersion": "15.11.0",
-			"_npmVersion": "7.11.1",
+			"_nodeVersion": "15.13.0",
+			"_npmVersion": "7.7.6",
 			"dist": {
 				"integrity": "sha512-qb1TpOfJkVwHHCDVaa4vycNZcgxmjb3fjsE+3vssvjmFHdbe2ewaCMmpSlCLdNMDQDuc7OGs9ot5+vtEfQ1vKQ==",
 				"shasum": "39e430892ba6895a66a8f9f027c3c09eec6c9610",

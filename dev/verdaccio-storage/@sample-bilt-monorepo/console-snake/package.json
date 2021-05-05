@@ -478,8 +478,8 @@
 			},
 			"homepage": "https://github.com/sample-bilt-monorepo/mono#readme",
 			"_id": "@sample-bilt-monorepo/console-snake@1.0.5",
-			"_nodeVersion": "15.11.0",
-			"_npmVersion": "7.11.1",
+			"_nodeVersion": "15.13.0",
+			"_npmVersion": "7.7.6",
 			"dist": {
 				"integrity": "sha512-8pr/tL0cCq8cTNT20z38Q6WY/RShFUT7XiPG9Hix0EwNAK5PA3ivGbxiDCvf7Tad1sUiyvwXk0eek2FPt2sIbQ==",
 				"shasum": "2655fb1236620364b65bee76a917c0e4574f9eeb",
