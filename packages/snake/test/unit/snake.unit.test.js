@@ -206,17 +206,22 @@ describe('snake (unit)', function () {
       expect(isAliveB).to.be.false
     })
 
-    it('should not be alive when snake head collide with snake', () => {
-      const commandedBoard = m.enqueueCommand(initialBoard, 'turn-to-south')
-      const newApple = {x: commandedBoard.snake[0].x, y: commandedBoard.snake[0].y + 2}
-      commandedBoard.apples = [newApple]
-      const {board: boardA, isAlive: isAliveA} = m.executeTick(commandedBoard, false)
+    const snakeCollisionTest = [
+      {x: 15, y: 15},
+      {x: 15, y: 16},
+      {x: 16, y: 16},
+      {x: 16, y: 15},
+      {x: 16, y: 14},
+    ]
 
-      expect(isAliveA).to.be.true
+    it('should not be alive when snake head move to snake body', () => {
+      const commandedBoard = m.enqueueCommand(initialBoard, 'turn-to-east')
 
-      const {isAlive: isAliveB} = m.executeTick(boardA, false)
+      commandedBoard.snake = snakeCollisionTest
 
-      expect(isAliveB).to.be.true
+      const {isAlive: isAliveA} = m.executeTick(commandedBoard, false)
+
+      expect(isAliveA).to.be.false
     })
   })
 
